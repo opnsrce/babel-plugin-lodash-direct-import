@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "dom",
+            "es2017"
+        ],
+        "declaration": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "inlineSourceMap": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "noImplicitReturns": true,
+        "noUnusedLocals": false,
+        "outDir": "dist",
+        "removeComments": true,
+        "strict": true,
+        "target": "es6"
+    },
+}

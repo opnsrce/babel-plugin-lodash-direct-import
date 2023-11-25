@@ -1,0 +1,28 @@
+{
+    "name": "Babel Plugin Lodash Direct Import",
+    "workspaceFolder": "/app",
+    "service": "node",
+    "dockerComposeFile": "./docker-compose.yml",
+    "shutdownAction": "none",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "editor.rulers": [80],
+                "editor.formatOnSave": true,
+                "editor.defaultFormatter": "esbenp.prettier-vscode",
+                "extensions.autoCheckUpdates": true,
+                "extensions.autoUpdate": true,
+                "[javascript]": {
+                    "editor.defaultFormatter": "esbenp.prettier-vscode"
+                }
+            },
+            "extensions": [
+                "ms-vscode-remote.remote-containers",
+                "ms-azuretools.vscode-docker",
+                "DavidAnson.vscode-markdownlint",
+                "esbenp.prettier-vscode",
+                "stkb.rewrap"
+            ]
+        }
+    }
+}
