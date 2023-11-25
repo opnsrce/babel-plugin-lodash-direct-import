@@ -8,11 +8,11 @@ npm i --save-dev babel-plugin-lodash-direct-import
 
 ## Usage
 
-An example `.babe.rc` file:
+An example `.babel.rc` file:
 
 ```json
 {
-    "plugins": ["babel-plugin-lodash-direct-import"]
+    "plugins": ["lodash-direct-import"]
 }
 ```
 
@@ -116,3 +116,4 @@ const test2 = lodash_replace(value);
 
 - [AST Spec](https://github.com/babel/babel/blob/main/packages/babel-parser/ast/spec.md)
 - [Babel Types](https://babeljs.io/docs/babel-types)
+- [AST Explorer](https://astexplorer.net/)

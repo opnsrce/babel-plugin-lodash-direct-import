@@ -1,26 +1,40 @@
 {
     "name": "babel-plugin-lodash-direct-import",
-    "version": "1.0.0",
+    "version": "1.0.1",
+    "author": {
+        "name": "Levi Hackwith",
+        "email": "levi.hackwith@gmail.com"
+    },
     "description": "A Babel plugin for cherry-picking Lodash imports",
-    "main": "index.js",
+    "main": "lib/index.js",
     "scripts": {
+        "prebuild": "rm -rf lib",
+        "build": "babel src/index.js --out-dir lib",
+        "prepublish": "npm run build",
         "coverage": "jest --coverage",
-        "docs": "jsdoc -c .jsdocrc.json",
         "lint": "prettier --write src/.",
         "test": "jest"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "keywords": [
+        "babel-plugin",
+        "cherry-pick",
+        "lodash",
+        "modules"
+    ],
+    "license": "MIT",
     "devDependencies": {
+        "@babel/cli": "^7.23.4",
         "@babel/core": "^7.23.3",
         "@babel/plugin-proposal-class-properties": "^7.13.0",
         "@babel/preset-env": "^7.23.3",
-        "@babel/types": "^7.23.4",
         "@jest/globals": "^29.7.0",
-        "docdash": "^2.0.2",
         "jest": "^29.7.0",
-        "jsdoc": "^4.0.0",
         "prettier": "^3.0.3"
-    }
+    },
+    "dependencies": {
+        "@babel/types": "^7.23.4"
+    },
+    "files": [
+        "lib"
+    ]
 }
